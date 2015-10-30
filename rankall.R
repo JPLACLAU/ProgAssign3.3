@@ -27,8 +27,17 @@ rankall <- function(outcome, num = "best"){
         ##
         ## In the end this is just my point of view, and i am not the professor so 
 
-   ## This is for taking  only rows with actual data data
-        data <- data[data[outcome] != 'Not Available', ]
+
+
+## This is for taking  only rows with actual data data
+##        data <- data[data[outcome] != 'Not Available', ]
+
+## in your code change data for outcome_data cause that is how you named it
+##  and outcomes for valid_outcome
+## with != you ignore the rows that have  "Not Available" writen
+        
+        
+        
         
   ## For each state, find the hospital of the given rank
   
