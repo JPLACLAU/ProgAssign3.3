@@ -27,7 +27,9 @@ rankall <- function(outcome, num = "best"){
         ##
         ## In the end this is just my point of view, and i am not the professor so 
 
-  
+   ## This is for taking  only rows with actual data data
+        data <- data[data[outcome] != 'Not Available', ]
+        
   ## For each state, find the hospital of the given rank
   
   if (outcome == "heart attack"){
