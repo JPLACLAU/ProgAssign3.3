@@ -1,6 +1,15 @@
 rankall <- function(outcome, num = "best"){
   ## Read outcome data
-  outcome_data <- read.csv("outcome-of-care-measures.csv",na.strings = "Not Available", stringsAsFactors = FALSE)
+   data <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+        data <- data[c(2, 7, 11, 17, 23)]
+        names(data)[1] <- "name"
+        names(data)[2] <- "state"
+        names(data)[3] <- "heart attack"
+        names(data)[4] <- "heart failure"
+        names(data)[5] <- "pneumonia"
+        # I think this is a better way to start defining our dataset, 
+        #by naming the columns with the imputs we desire, we only export
+        #the data from the outcoms.csv an then we assign that data the names we want
   
   ## Check that state and outcome are valid
   valid_state <- unique(outcome_data$State)
