@@ -17,7 +17,15 @@ rankall <- function(outcome, num = "best"){
         ## this way you have the checking less complicated
         
         ## Maybe it is just me but I dont see the step by step 
-        ##of the coding in an easy and understandable way
+        ##of the coding in an easy and understandable way 
+        ## with "easy and understandable" what i mean is the lack of the 
+        ## double ## with explanations before or after coding, so i understand 
+        ## what that sections is suposed to do, example:
+        ##
+        ##  coding coding coding
+        ## "##explanation here"
+        ##
+        ## In the end this is just my point of view, and i am not the professor so 
 
   
   ## For each state, find the hospital of the given rank
