@@ -12,12 +12,13 @@ rankall <- function(outcome, num = "best"){
         #the data from the outcoms.csv an then we assign that data the names we want
   
   ## Check that state and outcome are valid
-  valid_state <- unique(outcome_data$State)
-  
-  valid_outcome <- c("heart attack", "heart failure", "pneumonia")
-  if(!(outcome %in% valid_outcome)){
-    stop("invalid outcome")
-  }
+ outcomes = c("heart attack", "heart failure", "pneumonia")
+        if( outcome %in% outcomes == FALSE ) stop("invalid outcome")
+        ## this way you have the checking less complicated
+        
+        ## Maybe it is just me but I dont see the step by step 
+        ##of the coding in an easy and understandable way
+
   
   ## For each state, find the hospital of the given rank
   
